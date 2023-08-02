@@ -13,22 +13,25 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+      href="https://www.unpkg.com/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="bulma-list.css" />
-    <title>Team Axolotl</title>
+    <title>Team Bluth</title>
   </head>
   <body>
-    <section class="hero is-link">
+    <section class="hero has-background-info">
       <div class="hero-body">
-        <h1 class="title project-name">
+        <h1 class="title project-name has-text-light">
           🍌 Bluth's Frozen Banana 🍌
           <span class="is-size-7 is-italic">
-            (👈 Your project name goes here)
+            (👈 Your app name goes here)
           </span>
         </h1>
 
-        <a href="https://momentum-team-13.github.io/" class="subtitle">
+        <a
+          href="https://www.spacejam.com/1996/"
+          class="subtitle has-text-light"
+        >
           🔗 a link to the production website
         </a>
       </div>
@@ -43,19 +46,73 @@
           <p class="block">
             This section is where you can include information about the project.
             You might mention details that are important to understand what this
-            project does, what technologies it is bult with, why it was built,
-            and what value it provides. You should keep it brief and to the
-            point.
+            project does, what technologies it is built with, why it was built,
+            and what value it provides. Keep it brief and to the point.
           </p>
         </div>
+        <div class="project-video my-5">
+          <h2 class="subtitle has-text-weight-semibold">Videos</h2>
+          <div class="block">
+            <div class="icon-text">
+              <span class="icon">
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
+                  >
+                    <path
+                      d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25Zm1.75-.25a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25Z"
+                    ></path>
+                    <path
+                      d="M6 10.559V5.442a.25.25 0 0 1 .379-.215l4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559Z"
+                    ></path>
+                  </svg>
+                </i>
+              </span>
+              <span
+                ><a href="https://github.com/octocat/Hello-World"
+                  >Momentum presentation, August 4, 2023</a
+                ></span
+              >
+            </div>
+            <div class="icon-text">
+              <span class="icon">
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
+                  >
+                    <path
+                      d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25Zm1.75-.25a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25Z"
+                    ></path>
+                    <path
+                      d="M6 10.559V5.442a.25.25 0 0 1 .379-.215l4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559Z"
+                    ></path>
+                  </svg>
+                </i>
+              </span>
+              <span
+                ><a href="https://github.com/octocat/Hello-World"
+                  >Project demo</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
         <div class="project-links my-5">
-          <h2 class="subtitle has-text-weight-semibold">Project Links</h2>
+          <h2 class="subtitle has-text-weight-semibold">
+            Planning, Design, & Code
+          </h2>
           <p class="block">
             In this section you should provide links to other work that went
             into this project. Please list at least the links to the GitHub
-            repos for both the front end and back end applications. Other things
-            you could link to include wireframes, planning docs or diagrams,
-            videos you made about the project, or API documentation.
+            repo(s) for front end and back end code. Other things you could link
+            to include wireframes, planning docs or diagrams, or API
+            documentation.
           </p>
           <div class="icon-text">
             <span class="icon">
@@ -74,7 +131,7 @@
               </i>
             </span>
             <span
-              ><a href="https://github.com/momentum-team-13"
+              ><a href="https://github.com/octocat/Hello-World"
                 >Front End Repo on GitHub</a
               ></span
             >
@@ -96,7 +153,7 @@
               </i>
             </span>
             <span
-              ><a href="https://github.com/momentum-team-13"
+              ><a href="https://github.com/kelseyhightower/nocode"
                 >Back End Repo on GitHub</a
               ></span
             >
@@ -108,67 +165,97 @@
           Developers of Team Bluth
         </h2>
         <div class="list-item box">
+          <!-- The avatar image is not required. You can omit it if you want. -->
           <div class="list-item-image">
             <figure class="image is-64x64">
               <img
                 class="is-rounded"
-                src="https://source.unsplash.com/random/128x128/?fluffy-animal"
+                src="data:image/jpeg;base64,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"
               />
             </figure>
           </div>
 
           <div class="list-item-content">
-            <div class="list-item-title">Frieda Fluff</div>
+            <div class="list-item-title">Lucille Bluth</div>
             <div class="list-item-description">
               <p class="block">
-                Short description of what this dev worked on and what the video
-                is about.
+                Short personal intro and description of developer's role or
+                contributions on the project.
               </p>
-              <p><a href="#">Link to video presentation</a></p>
+              <p><a href="#">Optional Link to LinkedIn </a></p>
+              <p><a href="#">Optional Link to GitHub </a></p>
             </div>
           </div>
         </div>
 
         <div class="list-item box">
+          <!-- The avatar image is not required. You can delete it if you want. -->
           <div class="list-item-image">
             <figure class="image is-64x64">
               <img
                 class="is-rounded"
-                src="https://source.unsplash.com/random/128x128/?fluffy-animal"
+                src="data:image/jpeg;base64,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"
               />
             </figure>
           </div>
 
           <div class="list-item-content">
-            <div class="list-item-title">Finley Floof</div>
+            <div class="list-item-title">Michael Bluth</div>
             <div class="list-item-description">
               <p class="block">
-                Short description of what this dev worked on and what the video
-                is about.
+                Short personal intro and description of developers' role or
+                contributions on the project.
               </p>
-              <p><a href="#">Link to video presentation</a></p>
+              <p><a href="#">Optional Link to LinkedIn </a></p>
+              <p><a href="#">Optional Link to GitHub </a></p>
             </div>
           </div>
         </div>
 
         <div class="list-item box">
+          <!-- The avatar image is not required. You can delete it if you want. -->
           <div class="list-item-image">
             <figure class="image is-64x64">
               <img
                 class="is-rounded"
-                src="https://source.unsplash.com/random/128x128/?fluffy-animal"
+                src="data:image/jpeg;base64,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"
               />
             </figure>
           </div>
 
           <div class="list-item-content">
-            <div class="list-item-title">Fenix Fuzz</div>
+            <div class="list-item-title">Lindsay Bluth Fünke</div>
             <div class="list-item-description">
               <p class="block">
-                Short description of what this dev worked on and what the video
-                is about.
+                Short personal intro and description of developers' role or
+                contributions on the project.
               </p>
-              <p><a href="#">Link to video presentation</a></p>
+              <p><a href="#">Optional Link to LinkedIn </a></p>
+              <p><a href="#">Optional Link to GitHub </a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-item box">
+          <!-- The avatar image is not required. You can delete it if you want. -->
+          <div class="list-item-image">
+            <figure class="image is-64x64">
+              <img
+                class="is-rounded"
+                src="data:image/jpeg;base64,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"
+              />
+            </figure>
+          </div>
+
+          <div class="list-item-content">
+            <div class="list-item-title">Byron "Buster" Bluth</div>
+            <div class="list-item-description">
+              <p class="block">
+                Short personal intro and description of developers' role or
+                contributions on the project.
+              </p>
+              <p><a href="#">Optional Link to LinkedIn </a></p>
+              <p><a href="#">Optional Link to GitHub </a></p>
             </div>
           </div>
         </div>
